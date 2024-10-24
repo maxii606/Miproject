@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>MAXGYM - Calculadora de Peso Ideal</title>
+ <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+ <header>
+ <h1>Masimo Fitness</h1>
+ </header>
+ <main>
+ <h2>Calculadora de Peso Ideal</h2>
+ <form id="formulario">
+ <label for="altura">Altura (en cm):</label>
+ <input type="number" id="altura" required>
+ <label for="pesoActual">Peso actual (en kg):</label>
+ <input type="number" id="pesoActual" required>
+ <label for="edad">Edad:</label>
+ <input type="number" id="edad" required>
+ <label for="sexo">Sexo:</label>
+ <select id="sexo">
+ <option value="hombre">Hombre</option>
+ <option value="mujer">Mujer</option>
+ </select>
+ <label for="nivelActividad">Nivel de actividad:</label>
+ <select id="nivelActividad">
+ <option value="sedentario">Sedentario</option>
+ <option value="ligero">Ligero (ejercicio ocasional)</option>
+ <option value="moderado">Moderado (ejercicio regular)</option>
+ <option value="alto">Alto (ejercicio intenso)</option>
+ </select>
+ <button id="calcular">Calcular</button>
+ </form>
+ <div id="resultado"></div>
+ </main>
+
+ <script src="script.js"></script>
+</body>
+</html>
